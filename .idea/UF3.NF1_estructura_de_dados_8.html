@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+  let row = [];
+  let word = 'anilina';
+  let a = word.length;
+  for(let i = 0;i<word.length;i++){ // convertir string en un array
+    row.push(word[i])
+  };
+
+
+  if (row.length% 2===0){              // si la longitud is parell
+      for(let j = 0;j<a/2-1;j++) {
+          if (row[0] === row.at(-1)) {
+              row= row.slice(1, -1);
+              //console.log(row)
+          }
+
+  }
+    if(row[0]===row[1]&& row.length===2){
+      console.log('es palindrom')
+    }
+    else{
+      console.log(' no es palindrom')}
+  }
+  if (row.length% 2===1){                         // si la longitud is imparell
+      for(let j = 0;j<(a-1)/2;j++) {
+          if (row[0] === row[row.length-1]) {
+            row = row.slice(1, -1);
+            //console.log(row)
+          }
+      }
+      if (row.length===1){
+          console.log('es palindrom')}
+      else{
+        console.log(' no es palindrom')}
+
+  }
+
+</script>
+</body>
+</html>

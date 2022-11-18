@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+  let array =[];
+  for (let i = 0; i<5;i++){
+    array[i]= Math.round(Math.random()*10)
+
+  }
+  array.sort()
+
+
+  for(let a in array){
+    console.log(array[a]);
+
+  }
+
+  console.log('primero numero ='+array[0]);
+  console.log('ultimo numero =',array[4]);
+
+  /*console.log("Min:", Math.min.apply(null, array));
+  console.log("Max:", Math.max.apply(null, array));*/
+
+</script>
+</body>
+</html>

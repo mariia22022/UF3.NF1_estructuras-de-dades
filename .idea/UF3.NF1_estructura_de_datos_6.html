@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+  let count=0;
+  let array = ['hola','hello','blablabla','aadkkk'];
+  let newArray=[];
+  for(let i = 0; i<array.length;i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      if (array[i][j].toLowerCase() === 'a') {
+        count += 1
+      }
+    }
+    if (count >1) {
+      newArray.push(array[i])
+    }
+    count=0;
+
+  }
+  console.log(array);
+  console.log(newArray);
+
+  // opcion con funcion
+  /*function newArray1(array){
+    for(let i = 0; i<array.length;i++) {
+      for (let j = 0; j < array[i].length; j++) {
+        if (array[i][j].toLowerCase() === 'a') {
+          count += 1;
+        }
+      }
+      if (count >1) {
+        newArray.push(array[i])
+      }
+      count=0;
+
+    }
+    return newArray
+  }
+  console.log(newArray1(['Array','valor','nieve']))*/
+
+
+</script>
+</body>
+</html>
